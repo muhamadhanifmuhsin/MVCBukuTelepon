@@ -45,6 +45,9 @@ public class FormBukuTelepon extends javax.swing.JFrame {
         btnReset = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         tableTelepon = new javax.swing.JTable();
+        lblPencarianNama = new javax.swing.JLabel();
+        txtCari = new javax.swing.JTextField();
+        btnCari = new javax.swing.JButton();
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -168,6 +171,10 @@ public class FormBukuTelepon extends javax.swing.JFrame {
         ));
         jScrollPane2.setViewportView(tableTelepon);
 
+        lblPencarianNama.setText("Pencarian Nama :");
+
+        btnCari.setText("Cari");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -177,9 +184,13 @@ public class FormBukuTelepon extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 309, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(lblPencarianNama)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtCari)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnCari)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -191,7 +202,12 @@ public class FormBukuTelepon extends javax.swing.JFrame {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblPencarianNama)
+                    .addComponent(txtCari, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCari))
+                .addContainerGap(22, Short.MAX_VALUE))
         );
 
         pack();
@@ -237,6 +253,7 @@ public class FormBukuTelepon extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCari;
     private javax.swing.JButton btnDelete;
     private javax.swing.JButton btnInsert;
     private javax.swing.JButton btnReset;
@@ -250,8 +267,10 @@ public class FormBukuTelepon extends javax.swing.JFrame {
     private javax.swing.JLabel lblID;
     private javax.swing.JLabel lblNama;
     private javax.swing.JLabel lblNoTelp;
+    private javax.swing.JLabel lblPencarianNama;
     private javax.swing.JTable tableTelepon;
     private javax.swing.JTextField txtAlamat;
+    private javax.swing.JTextField txtCari;
     private javax.swing.JTextField txtID;
     private javax.swing.JTextField txtNama;
     private javax.swing.JTextField txtNoTelp;
